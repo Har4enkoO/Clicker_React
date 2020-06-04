@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './index.css';
 import Resources from './Resources';
+import BasicResources from '../src/Basic_Resources/basicResources';
+import Population from '../src/Population/worker.js';
 
 export default class Game extends Component {
   render() {
@@ -20,6 +22,7 @@ export default class Game extends Component {
           <p id="mighty">Ruled by the mighty</p>
         </header>
         <Resources />
+        {/* <Population /> */}
       </>
     );
   }
