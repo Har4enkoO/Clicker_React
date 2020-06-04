@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './index.css';
+import Resources from './Resources';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class Game extends Component {
+  render() {
+    return (
+      <>
+        <header>
+          <nav>
+            <a href="http://civclicker.sourceforge.net/civclicker/civFAQ.html">
+              FAQ / Instructions / Bugfixing
+            </a>
+            <a href="http://civclicker.sourceforge.net/civclicker/civUpdates.html">
+              Game Updates Log
+            </a>
+            <a href="http://localhost:3000/">Import/Export Save</a>
+          </nav>
+          <h1 id="universe">The Thorp of</h1>
+          <p id="mighty">Ruled by the mighty</p>
+        </header>
+        <Resources />
+      </>
+    );
+  }
 }
-
-export default App;
